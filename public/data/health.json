@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Health",
+        "question": "What is the main function of the heart?",
+        "number": 1,
+        "answers": [
+            "Digest food",
+            "Pump blood",
+            "Control breathing",
+            "Filter toxins"
+        ],
+        "correct": "Pump blood",
+        "explanation": "The heart pumps blood throughout the body, delivering oxygen and nutrients.",
+        "hint": "It's a muscular organ that beats."
+    }
+]

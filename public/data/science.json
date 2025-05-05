@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Science",
+        "question": "What planet is known as the Red Planet?",
+        "number": 1,
+        "answers": ["Mars", "Venus", "Jupiter", "Saturn"],
+        "correct": "Mars",
+        "explanation": "Mars is called the Red Planet due to its reddish appearance from iron oxide.",
+        "hint": "It's named after the Roman god of war."
+    }
+]

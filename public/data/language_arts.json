@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Language Arts",
+        "question": "Which of the following is a synonym for 'happy'?",
+        "number": 1,
+        "answers": ["Sad", "Angry", "Joyful", "Tired"],
+        "correct": "Joyful",
+        "explanation": "A synonym is a word with a similar meaning. 'Joyful' means the same as 'happy'.",
+        "hint": "Think of another word that means cheerful."
+    }
+]

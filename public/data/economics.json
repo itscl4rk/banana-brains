@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Economics",
+        "question": "What is the basic problem of economics?",
+        "number": 1,
+        "answers": ["Scarcity", "Inflation", "Unemployment", "Supply"],
+        "correct": "Scarcity",
+        "explanation": "Economics is primarily concerned with scarcity—limited resources versus unlimited wants.",
+        "hint": "It's about not having enough of something."
+    }
+]

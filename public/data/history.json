@@ -1,0 +1,16 @@
+[
+    {
+        "title": "History",
+        "question": "Who was the first President of the United States?",
+        "number": 1,
+        "answers": [
+            "George Washington",
+            "Thomas Jefferson",
+            "John Adams",
+            "Abraham Lincoln"
+        ],
+        "correct": "George Washington",
+        "explanation": "George Washington became the first U.S. President in 1789.",
+        "hint": "He appears on the U.S. $1 bill."
+    }
+]

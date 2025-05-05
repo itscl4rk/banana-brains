@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Logic & Puzzles",
+        "question": "If all roses are flowers and some flowers fade quickly, can we say some roses fade quickly?",
+        "number": 1,
+        "answers": ["Yes", "No", "Maybe", "Always"],
+        "correct": "No",
+        "explanation": "The logic doesn't guarantee that some roses fade quickly, only that some flowers (which may or may not be roses) do.",
+        "hint": "Not all flowers are roses."
+    }
+]

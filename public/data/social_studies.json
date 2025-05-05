@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Social Studies",
+        "question": "What do we call the study of people, places, and environments?",
+        "number": 1,
+        "answers": ["Geography", "Economics", "Politics", "Sociology"],
+        "correct": "Geography",
+        "explanation": "Geography is the study of Earth and its features, including human activity.",
+        "hint": "It's often shown with maps."
+    }
+]
