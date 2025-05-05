@@ -1,11 +1,25 @@
 [
     {
         "title": "Science",
-        "question": "What planet is known as the Red Planet?",
+        "question": "What type of animal is a monkey classified as?",
         "number": 1,
-        "answers": ["Mars", "Venus", "Jupiter", "Saturn"],
-        "correct": "Mars",
-        "explanation": "Mars is called the Red Planet due to its reddish appearance from iron oxide.",
-        "hint": "It's named after the Roman god of war."
+        "answers": ["Reptile", "Bird", "Mammal", "Insect"],
+        "correct": "Mammal",
+        "explanation": "Monkeys are warm-blooded vertebrates that have fur and give birth to live young.",
+        "hint": "Humans are the same type!"
+    },
+    {
+        "title": "Science",
+        "question": "Monkeys use tools in the wild. What does this suggest about their brains?",
+        "number": 2,
+        "answers": [
+            "They are lazy",
+            "They are aggressive",
+            "They have high intelligence",
+            "They are nocturnal"
+        ],
+        "correct": "They have high intelligence",
+        "explanation": "Tool use is a sign of advanced cognitive ability.",
+        "hint": "It’s a sign of smart problem-solving."
     }
 ]

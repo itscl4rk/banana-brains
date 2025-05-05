@@ -10,7 +10,8 @@ type QuizProps = {
     correct: string;
     explanation: string;
     hint: string;
-    onNext?: () => void; // optional callback for parent to control navigation
+    onNext?: () => void;
+    onAnswer?: (isCorrect: boolean) => void; // ← New
 };
 
 const QuizCard = ({
@@ -22,6 +23,7 @@ const QuizCard = ({
     explanation,
     hint,
     onNext,
+    onAnswer,
 }: QuizProps) => {
     const [selected, setSelected] = useState<string | null>(null);
     const [showHint, setShowHint] = useState(false);
@@ -52,7 +54,12 @@ const QuizCard = ({
                     return (
                         <motion.button
                             key={idx}
-                            onClick={() => setSelected(answer)}
+                            onClick={() => {
+                                setSelected(answer);
+                                if (!selected && onAnswer) {
+                                    onAnswer(answer === correct);
+                                }
+                            }}
                             disabled={!!selected}
                             whileTap={{ scale: 0.98 }}
                             className={`cursor-pointer w-full text-left px-4 py-2 rounded-md transition-colors duration-200 ${bgClass}  ${
@@ -102,7 +109,7 @@ const QuizCard = ({
                         onClick={onNext}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className="mt-6 bg-yellow-500 text-zinc-900 font-semibold py-2 px-4 rounded-md flex items-center gap-2"
+                        className="cursor-pointer mt-6 bg-yellow-500 text-zinc-900 font-semibold py-2 px-4 rounded-md flex items-center gap-2"
                     >
                         Next
                         <ArrowRight className="w-4 h-4" />

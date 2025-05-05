@@ -48,9 +48,9 @@ const subjects = [
         link: '/quiz/health',
     },
     {
-        name: 'Logic & Puzzles',
+        name: 'Philosophy',
         icon: <Brain className="w-6 h-6" />,
-        link: '/quiz/logic_puzzles',
+        link: '/quiz/philosophy',
     },
 ];
 

@@ -1,11 +1,25 @@
 [
     {
         "title": "Economics",
-        "question": "What is the basic problem of economics?",
+        "question": "If a monkey trades 2 coconuts for 1 banana, what is the opportunity cost of the banana?",
         "number": 1,
-        "answers": ["Scarcity", "Inflation", "Unemployment", "Supply"],
-        "correct": "Scarcity",
-        "explanation": "Economics is primarily concerned with scarcity—limited resources versus unlimited wants.",
-        "hint": "It's about not having enough of something."
+        "answers": ["1 coconut", "2 coconuts", "3 bananas", "No cost"],
+        "correct": "2 coconuts",
+        "explanation": "Opportunity cost is what you give up—in this case, 2 coconuts.",
+        "hint": "Think of what the monkey loses in the trade."
+    },
+    {
+        "title": "Economics",
+        "question": "What kind of economy would a monkey tribe use if they simply trade bananas for services?",
+        "number": 2,
+        "answers": [
+            "Market economy",
+            "Mixed economy",
+            "Command economy",
+            "Barter economy"
+        ],
+        "correct": "Barter economy",
+        "explanation": "A barter economy involves direct exchange of goods or services without money.",
+        "hint": "No money is involved here!"
     }
 ]

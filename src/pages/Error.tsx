@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Error() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="h-screen flex flex-col items-center justify-center px-4">
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

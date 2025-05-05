@@ -1,11 +1,20 @@
 [
     {
         "title": "Math",
-        "question": "What is the value of π (pi) rounded to two decimal places?",
+        "question": "A monkey eats 3 bananas every hour. How many bananas does it eat in 5 hours?",
         "number": 1,
-        "answers": ["3.14", "2.72", "1.61", "1.41"],
-        "correct": "3.14",
-        "explanation": "π (pi) is approximately 3.14159, so 3.14 is the rounded value.",
-        "hint": "It's related to circles."
+        "answers": ["8", "15", "12", "10"],
+        "correct": "15",
+        "explanation": "3 bananas/hour × 5 hours = 15 bananas.",
+        "hint": "Multiply the bananas per hour by the number of hours."
+    },
+    {
+        "title": "Math",
+        "question": "If 4 monkeys share 20 bananas equally, how many bananas does each monkey get?",
+        "number": 2,
+        "answers": ["4", "6", "5", "3"],
+        "correct": "5",
+        "explanation": "20 ÷ 4 = 5 bananas each.",
+        "hint": "Divide the total bananas by the number of monkeys."
     }
 ]

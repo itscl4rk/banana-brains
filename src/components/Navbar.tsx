@@ -37,12 +37,12 @@ const Navbar = () => {
                     <motion.a
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
-                        href="https://github.com/itscl4rk/clay-games"
+                        href="https://github.com/itscl4rk/banana-brains"
                         target="_blank"
                         className="cursor-pointer relative flex items-center gap-2 bg-yellow-400/70 rounded-md px-4 pr-16 py-2 overflow-hidden"
                     >
                         <Github className="w-4 h-4" />
-                        <span className="font-semibold">Star us</span>
+                        <span className="font-semibold">Star me</span>
 
                         <AnimatePresence>
                             {hovered && (

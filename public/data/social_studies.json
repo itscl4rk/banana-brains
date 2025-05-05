@@ -1,11 +1,20 @@
 [
     {
         "title": "Social Studies",
-        "question": "What do we call the study of people, places, and environments?",
+        "question": "In some cultures, monkeys are seen as symbols of what?",
         "number": 1,
-        "answers": ["Geography", "Economics", "Politics", "Sociology"],
-        "correct": "Geography",
-        "explanation": "Geography is the study of Earth and its features, including human activity.",
-        "hint": "It's often shown with maps."
+        "answers": ["Wisdom", "Bad luck", "Boredom", "Silence"],
+        "correct": "Wisdom",
+        "explanation": "In many Asian cultures, monkeys symbolize intelligence and mischief.",
+        "hint": "Think about the 'See no evil' monkeys."
+    },
+    {
+        "title": "Social Studies",
+        "question": "Which country celebrates a Monkey King in its folklore?",
+        "number": 2,
+        "answers": ["India", "China", "Kenya", "Brazil"],
+        "correct": "China",
+        "explanation": "The Monkey King (Sun Wukong) is a legendary figure in Chinese mythology.",
+        "hint": "The story is part of 'Journey to the West.'"
     }
 ]

@@ -1,16 +1,20 @@
 [
     {
         "title": "Health",
-        "question": "What is the main function of the heart?",
+        "question": "What nutrient do monkeys get from bananas that helps muscle function?",
         "number": 1,
-        "answers": [
-            "Digest food",
-            "Pump blood",
-            "Control breathing",
-            "Filter toxins"
-        ],
-        "correct": "Pump blood",
-        "explanation": "The heart pumps blood throughout the body, delivering oxygen and nutrients.",
-        "hint": "It's a muscular organ that beats."
+        "answers": ["Calcium", "Iron", "Potassium", "Vitamin D"],
+        "correct": "Potassium",
+        "explanation": "Bananas are high in potassium, which helps with muscle and nerve function.",
+        "hint": "It's also good for humans!"
+    },
+    {
+        "title": "Health",
+        "question": "Monkeys grooming each other helps reduce stress. What is this an example of?",
+        "number": 2,
+        "answers": ["Nutrition", "Exercise", "Social bonding", "Infection"],
+        "correct": "Social bonding",
+        "explanation": "Grooming is a form of social behavior that strengthens relationships.",
+        "hint": "It's not just about cleanliness!"
     }
 ]

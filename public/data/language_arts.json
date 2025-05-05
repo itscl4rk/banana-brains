@@ -1,11 +1,25 @@
 [
     {
         "title": "Language Arts",
-        "question": "Which of the following is a synonym for 'happy'?",
+        "question": "Which of the following is a simile?",
         "number": 1,
-        "answers": ["Sad", "Angry", "Joyful", "Tired"],
-        "correct": "Joyful",
-        "explanation": "A synonym is a word with a similar meaning. 'Joyful' means the same as 'happy'.",
-        "hint": "Think of another word that means cheerful."
+        "answers": [
+            "The monkey danced with joy.",
+            "The monkey was like a bolt of lightning.",
+            "Monkeys swing in trees.",
+            "He monkeyed around all day."
+        ],
+        "correct": "The monkey was like a bolt of lightning.",
+        "explanation": "Similes compare two things using 'like' or 'as'.",
+        "hint": "Look for 'like' or 'as' in the sentence."
+    },
+    {
+        "title": "Language Arts",
+        "question": "What is the main verb in this sentence: 'The monkey climbed the tree swiftly'?",
+        "number": 2,
+        "answers": ["climbed", "monkey", "tree", "swiftly"],
+        "correct": "climbed",
+        "explanation": "The verb is the action—what the monkey is doing.",
+        "hint": "What action is taking place?"
     }
 ]

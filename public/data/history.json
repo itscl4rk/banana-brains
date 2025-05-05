@@ -1,16 +1,20 @@
 [
     {
         "title": "History",
-        "question": "Who was the first President of the United States?",
+        "question": "In which century did Charles Darwin propose the theory of evolution, involving monkeys as distant relatives?",
         "number": 1,
-        "answers": [
-            "George Washington",
-            "Thomas Jefferson",
-            "John Adams",
-            "Abraham Lincoln"
-        ],
-        "correct": "George Washington",
-        "explanation": "George Washington became the first U.S. President in 1789.",
-        "hint": "He appears on the U.S. $1 bill."
+        "answers": ["16th", "17th", "18th", "19th"],
+        "correct": "19th",
+        "explanation": "Darwin published 'On the Origin of Species' in 1859.",
+        "hint": "It was in the 1800s."
+    },
+    {
+        "title": "History",
+        "question": "Which country sent the first monkey into space?",
+        "number": 2,
+        "answers": ["USA", "Russia", "China", "Germany"],
+        "correct": "USA",
+        "explanation": "The U.S. sent a rhesus monkey named Albert II in 1949.",
+        "hint": "It happened before the first human space flight."
     }
 ]
