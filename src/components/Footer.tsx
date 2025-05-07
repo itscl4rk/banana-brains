@@ -67,7 +67,7 @@ const Footer = () => {
                             </svg>
                         </Link>
                         <Link
-                            to="https://www.youtube.com/@monkeymento ryt?sub_confirmation=1"
+                            to="https://www.youtube.com/@monkeymentoryt?sub_confirmation=1"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-400 hover:text-white transition-colors duration-300"
