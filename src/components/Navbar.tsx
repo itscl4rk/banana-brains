@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Github, Star } from 'lucide-react';
+import { Banana, Github, Star } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 
@@ -8,7 +8,7 @@ const Navbar = () => {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <nav className="sticky top-0 z-50 bg-zinc-800 border-b border-yellow-400 w-full shadow-sm">
+        <nav className="sticky top-0 z-50 bg-zinc-800/60 backdrop-blur-md border-b border-yellow-400 w-full shadow-sm">
             <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
                 {/* Logo */}
                 <Link
@@ -16,7 +16,8 @@ const Navbar = () => {
                     className="text-2xl font-semibold text-yellow-400 tracking-wide"
                 >
                     <span className="inline-flex items-center gap-2">
-                        Banana Brains
+                        Banana Brains{' '}
+                        <Banana className="w-6 h-6 text-yellow-500" />
                         <span className="bg-yellow-400 text-zinc-900 text-[10px] font-bold px-1.5 py-0.5 mt-1.5 rounded uppercase">
                             beta
                         </span>
@@ -39,7 +40,7 @@ const Navbar = () => {
                         onMouseLeave={() => setHovered(false)}
                         href="https://github.com/itscl4rk/banana-brains"
                         target="_blank"
-                        className="cursor-pointer relative flex items-center gap-2 bg-yellow-400/70 rounded-md px-4 pr-16 py-2 overflow-hidden"
+                        className="cursor-pointer relative flex items-center gap-2 bg-yellow-400/70 rounded-md px-4 pr-16 py-2"
                     >
                         <Github className="w-4 h-4" />
                         <span className="font-semibold">Star me</span>

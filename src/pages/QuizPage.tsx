@@ -132,7 +132,7 @@ const QuizPage = () => {
     const percent = Math.round((correctCount / questions.length) * 100);
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-zinc-900 to-zinc-800 p-6 flex flex-col items-center justify-start pt-24 text-white">
+        <div className="p-6 flex flex-col items-center justify-start pt-44 text-white">
             <AnimatePresence mode="wait">
                 {currentIndex === -1 ? (
                     <motion.div

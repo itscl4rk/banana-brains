@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+/* Hide the scrollbar completely while still allowing scrolling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #fbbf24;
+    border-radius: 4px;
+}

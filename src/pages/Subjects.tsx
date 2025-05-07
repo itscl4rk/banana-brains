@@ -62,9 +62,8 @@ const Subjects = () => {
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                 {subjects.map((subject, idx) => (
-                    <Link to={subject.link}>
+                    <Link to={subject.link} key={idx}>
                         <motion.div
-                            key={idx}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.97 }}
                             className="bg-zinc-800 border border-yellow-500 rounded-xl p-5 flex flex-col items-center justify-center shadow-md transition"
