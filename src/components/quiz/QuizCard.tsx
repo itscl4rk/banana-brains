@@ -1,4 +1,7 @@
-// src/components/QuizCard.tsx
+import { useEffect } from 'react';
+import wrong from '/sound/wrong.mp3';
+import correct from '/sound/correct.mp3';
+
 type QuizCardProps = {
     question: string;
     options: string[];
@@ -6,9 +9,13 @@ type QuizCardProps = {
     isSubmitted: boolean;
     correctAnswer: string;
     onAnswerClick: (option: string) => void;
+    questionIndex: number;
+    totalQuestions: number;
 };
 
 const QuizCard = ({
+    questionIndex,
+    totalQuestions,
     question,
     options,
     selectedAnswer,
@@ -16,8 +23,19 @@ const QuizCard = ({
     correctAnswer,
     onAnswerClick,
 }: QuizCardProps) => {
+    useEffect(() => {
+        if (isSubmitted && selectedAnswer) {
+            const isCorrect = selectedAnswer === correctAnswer;
+            const audio = new Audio(isCorrect ? correct : wrong);
+            audio.play();
+        }
+    }, [isSubmitted, selectedAnswer, correctAnswer]);
+
     return (
         <div>
+            <div className="mb-2 inline-block bg-cloud/10 text-sm px-3 py-1 rounded-full text-cloud">
+                {questionIndex + 1} / {totalQuestions}
+            </div>
             <h2 className="text-2xl font-bold mb-6">{question}</h2>
             <div className="grid gap-4">
                 {['A', 'B', 'C', 'D'].map((option, idx) => {

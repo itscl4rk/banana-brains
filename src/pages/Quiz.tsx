@@ -85,6 +85,8 @@ const Quiz = () => {
                         isSubmitted={isSubmitted}
                         correctAnswer={currentQuestion.correctAnswer}
                         onAnswerClick={handleAnswerClick}
+                        questionIndex={currentQuestionIndex}
+                        totalQuestions={questions.length}
                     />
                 ) : (
                     <h2 className="text-2xl font-bold mb-6">
