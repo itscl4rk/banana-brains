@@ -6,7 +6,7 @@ export default function MainLayout() {
     return (
         <div className="flex flex-col min-h-screen">
             <Navbar /> {/* Navbar at the top */}
-            <div className="flex-1">
+            <div className="flex-1 mt-24">
                 <Outlet /> {/* This will render the nested route content */}
             </div>
             <Footer /> {/* Add Footer here */}

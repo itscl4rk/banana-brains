@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Banana } from 'lucide-react'; // Optional fun icon
 import { motion } from 'framer-motion';
 
-export default function Error() {
+const Error = () => {
     return (
         <div className="h-screen flex flex-col items-center justify-center px-4">
             <motion.div
@@ -12,7 +12,7 @@ export default function Error() {
                 className="text-center mb-32"
             >
                 <img src="/monkey.png" className="size-46 mx-auto" />
-                <div className="text-yellow-400 text-6xl font-extrabold mb-4">
+                <div className="text-banana text-6xl font-extrabold mb-4">
                     404
                 </div>
                 <h1 className="text-2xl md:text-3xl font-semibold mb-2">
@@ -24,7 +24,7 @@ export default function Error() {
                 </p>
                 <Link
                     to="/"
-                    className="inline-flex items-center gap-2 bg-yellow-400 text-zinc-900 font-bold px-6 py-3 rounded-full shadow hover:bg-yellow-500 transition"
+                    className="inline-flex items-center gap-2 bg-banana text-zinc-900 font-bold px-6 py-3 rounded-full shadow hover:bg-banana/80 transition"
                 >
                     <Banana className="w-5 h-5" />
                     Return Home
@@ -32,4 +32,5 @@ export default function Error() {
             </motion.div>
         </div>
     );
-}
+};
+export default Error;
