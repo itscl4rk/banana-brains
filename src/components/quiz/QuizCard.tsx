@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import wrong from '/sound/wrong.mp3';
 import correct from '/sound/correct.mp3';
+import { motion } from 'framer-motion';
 
 type QuizCardProps = {
     question: string;
@@ -23,6 +24,7 @@ const QuizCard = ({
     correctAnswer,
     onAnswerClick,
 }: QuizCardProps) => {
+    // Play sound for correct or wrong answer
     useEffect(() => {
         if (isSubmitted && selectedAnswer) {
             const isCorrect = selectedAnswer === correctAnswer;
@@ -31,8 +33,17 @@ const QuizCard = ({
         }
     }, [isSubmitted, selectedAnswer, correctAnswer]);
 
+    // Shake animation for wrong answer
+    const shakeAnimation = {
+        animate:
+            isSubmitted && selectedAnswer !== correctAnswer
+                ? { x: [0, -10, 10, -10, 10, 0] }
+                : {},
+        transition: { duration: 0.5, ease: 'easeInOut' },
+    };
+
     return (
-        <div>
+        <motion.div className="p-6 rounded-lg shadow-lg" {...shakeAnimation}>
             <div className="mb-2 inline-block bg-cloud/10 text-sm px-3 py-1 rounded-full text-cloud">
                 {questionIndex + 1} / {totalQuestions}
             </div>
@@ -47,7 +58,7 @@ const QuizCard = ({
                         isSubmitted && isSelected && option !== correctAnswer;
 
                     return (
-                        <button
+                        <motion.button
                             key={option}
                             className={`w-full px-4 py-3 rounded-md text-left border transition-all duration-200 cursor-pointer
                                 ${
@@ -67,11 +78,11 @@ const QuizCard = ({
                                 {option}.
                             </span>
                             {label}
-                        </button>
+                        </motion.button>
                     );
                 })}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

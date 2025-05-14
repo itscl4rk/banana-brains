@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { FaXmark, FaCheck } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { Home } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 type QuizFooterProps = {
     onSubmit: () => void;
@@ -43,6 +45,8 @@ const QuizFooter = ({
         }
     }, [isSubmitted, onNextQuestion]);
 
+    const navigate = useNavigate();
+
     return (
         <div
             className={cn(
@@ -51,7 +55,7 @@ const QuizFooter = ({
             )}
             style={{ minHeight: FOOTER_HEIGHT, height: FOOTER_HEIGHT }}
         >
-            {/* Animated Feedback */}
+            {/* Animated Feedback in Center */}
             <div
                 className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2 text-lg font-semibold"
                 style={{
@@ -81,9 +85,9 @@ const QuizFooter = ({
                 )}
             </div>
 
-            {/* Button Area */}
+            {/* Buttons Section */}
             <motion.div
-                className="flex items-center gap-4 ml-auto"
+                className="flex items-center gap-4 w-full"
                 style={{ height: FOOTER_HEIGHT }}
                 initial={false}
                 animate={{
@@ -93,8 +97,22 @@ const QuizFooter = ({
                 transition={{ duration: 0.3 }}
             >
                 {!isSubmitted ? (
-                    <>
-                        <div className="w-px h-8 bg-cloud/20" />
+                    <div className="flex justify-between items-center gap-4 w-full">
+                        {/* Home Button on Left */}
+                        <Button
+                            size="lg"
+                            className={cn(
+                                'font-semibold transition-all duration-200 ease-in-out text-onyx cursor-pointer bg-avocado/60 hover:bg-avocado/100'
+                            )}
+                            onClick={() => navigate('/')}
+                        >
+                            <Home className="size-5" />
+                            Home
+                        </Button>
+
+                        {/* Vertical Divider */}
+
+                        {/* Submit Button on Right */}
                         <Button
                             size="lg"
                             className={cn(
@@ -108,9 +126,9 @@ const QuizFooter = ({
                         >
                             Submit
                         </Button>
-                    </>
+                    </div>
                 ) : (
-                    <div style={{ width: '120px' }} />
+                    <div className="w-[120px]" />
                 )}
             </motion.div>
         </div>

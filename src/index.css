@@ -28,6 +28,56 @@
     background: #eee82c;
     border-radius: 8px;
 }
+.my-slider {
+    background: transparent; /* Let the track color show through */
+}
+
+/* Chrome, Safari, Opera, Edge Chromium */
+.my-slider::-webkit-slider-runnable-track {
+    background: #14532d; /* dark green track */
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+.my-slider::-webkit-slider-thumb {
+    background: #bef264; /* lime thumb */
+    border: 2px solid #d1fae5; /* cloud border */
+    height: 1rem;
+    width: 1rem;
+    border-radius: 9999px;
+    appearance: none;
+    margin-top: -0.25rem; /* Centers thumb on track */
+}
+
+/* Firefox */
+.my-slider::-moz-range-track {
+    background: #14532d;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+.my-slider::-moz-range-thumb {
+    background: #bef264;
+    border: 2px solid #d1fae5;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 9999px;
+}
+
+/* IE */
+.my-slider::-ms-fill-lower {
+    background: #d1fae5;
+    border-radius: 0.5rem;
+}
+.my-slider::-ms-fill-upper {
+    background: #14532d;
+    border-radius: 0.5rem;
+}
+.my-slider::-ms-thumb {
+    background: #bef264;
+    border: 2px solid #d1fae5;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 9999px;
+}
 
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);

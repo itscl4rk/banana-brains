@@ -1,10 +1,15 @@
+import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import SettingsOverlay from '@/components/quiz/SettingsOverlay';
 import QuizFooter from '@/components/quiz/QuizFooter';
 import QuizNavbar from '@/components/quiz/QuizNavbar';
 import QuizCard from '@/components/quiz/QuizCard';
 import EndPage from '@/components/quiz/EndPage';
+import { Settings } from 'lucide-react';
 
 const Quiz = () => {
+    const [settingsOpen, setSettingsOpen] = useState(false);
+
     const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -72,6 +77,13 @@ const Quiz = () => {
             <QuizNavbar streak={streak} />
 
             <main className="flex-1 mt-24 px-6 py-8 max-w-3xl mx-auto w-full">
+                <button
+                    onClick={() => setSettingsOpen(true)}
+                    className="transition-colors duration-200 cursor-pointer fixed top-4 right-10 z-40 hover:bg-zinc-300/20 text-zinc-500 hover:text-zinc-100 px-3 py-3 flex items-center gap-1 bg-zinc-300/10 rounded-lg h-10"
+                >
+                    <Settings className="w-6 h-6" />
+                </button>
+
                 {quizEnded ? (
                     <EndPage
                         onRestart={handleRestart}
@@ -104,6 +116,11 @@ const Quiz = () => {
                     onNextQuestion={handleNextQuestion}
                 />
             )}
+            <AnimatePresence>
+                {settingsOpen && (
+                    <SettingsOverlay onClose={() => setSettingsOpen(false)} />
+                )}
+            </AnimatePresence>
         </div>
     );
 };
